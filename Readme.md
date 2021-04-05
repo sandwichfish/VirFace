@@ -1,7 +1,7 @@
 # VirFace
 
 This is a PyTorch implementation of "**VirFace: Enhancing Face Recognition via Unlabeled Shallow Data**" _(CVPR 2021)_.
-**![VirFace_Framework.png](https://intranetproxy.alipay.com/skylark/lark/0/2020/png/329323/1606288467437-ff10fc2d-8e93-4c8c-9256-56aaaa8d5bcd.png#align=left&display=inline&height=347&margin=%5Bobject%20Object%5D&name=VirFace_Framework.png&originHeight=347&originWidth=1027&size=165412&status=done&style=none&width=1027)**
+**![VirFace_Framework.png](./img/VirFace_Framework.png)**
 
 ### **Training stage**
 
