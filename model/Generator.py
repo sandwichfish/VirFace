@@ -44,7 +44,7 @@ class Generator(nn.Module):
     def set_device(self, device):
         self.device = device
 
-    def gen_gen_feat(self, x, sample_count):
+    def gen_aug_feat(self, x, sample_count):
         x = self.RELU(self.en1(x))
         x_mean = self.en_mean(x)
         x_var = self.en_var(x)
