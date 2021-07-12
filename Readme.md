@@ -138,3 +138,15 @@ This is a PyTorch implementation of "**VirFace: Enhancing Face Recognition via U
     >
     > **eval:** whether evaluate for each epoch on LFW, CFP-FF, CFP-FP
 
+### **Citation**
+
+If our paper helps your research, please cite it in your publications:
+```
+@inproceedings{li2021virface,
+  title={VirFace: Enhancing Face Recognition via Unlabeled Shallow Data},
+  author={Li, Wenyu and Guo, Tianchu and Li, Pengyu and Chen, Binghui and Wang, Biao and Zuo, Wangmeng and Zhang, Lei},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={14729--14738},
+  year={2021}
+}
+```
