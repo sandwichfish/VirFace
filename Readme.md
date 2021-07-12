@@ -93,7 +93,7 @@ This is a PyTorch implementation of "**VirFace: Enhancing Face Recognition via U
        python3 train.py --method generator --pretrain_file %backbone_path
        python3 train.py --method virface --pretrain_file %generator_path
     ```
- - _Trainingfrom pretrained model_
+ - _Training from pretrained model_
     - **VirClass** 
 
     ```shell
