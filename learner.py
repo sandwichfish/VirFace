@@ -41,7 +41,10 @@ def train(args, train_loader, model, criterion, optimizer, epoch, pretrain_flag_
             unlabel_feature = None
 
         if args.method == 'virface':
-            gen_feature = model['generator'].gen_aug_feat(F.normalize(unlabel_feature.detach()), args.gen_num)
+            if len(args.gpus.split(',')) > 1:
+                gen_feature = model['generator'].module.gen_aug_feat(F.normalize(unlabel_feature.detach()), args.gen_num)
+            else:
+                gen_feature = model['generator'].gen_aug_feat(F.normalize(unlabel_feature.detach()), args.gen_num)
             gen_feature_label, mean_label, var_label = model['generator'](F.normalize(label_feature.detach()))
             gt_weight = model['head'].weight[label, :]
         elif args.method == 'generator':
