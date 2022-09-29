@@ -308,8 +308,9 @@ if __name__ == '__main__':
 
         # save per epoch
         IterationNum[0] = 0
-        save_dict = {'epoch': epoch + 1, 'optimizer': optimizer.state_dict()}.update(
-            {k: model[k].state_dict() for k in model.keys()})
+        save_dict = {'epoch': epoch + 1}
+        for k in model.keys():
+            save_dict.update({k: model[k].state_dict()})
         save_checkpoint(save_dict, is_best, os.path.join(snapshot_prefix, '_epoch_' + str(epoch)))
 
     print('Training complete')
