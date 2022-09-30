@@ -51,7 +51,7 @@ class Generator(nn.Module):
 
         gen_list = []
         for i in range(sample_count):
-            z = self.re_parameter(x_mean, x_var)
+            z = self.re_sample(x_mean, x_var)
             x = self.RELU(self.de1(z))
             x = self.de2(x)
             gen_list.append(F.normalize(x))
